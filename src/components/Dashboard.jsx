@@ -1,10 +1,10 @@
 import React, { useState,useEffect } from 'react'
 import data from '../data/db.json'
 import {Link} from 'react-router-dom'
-import Low from '../assets/low.svg'
-import Moderate from '../assets/moderate.svg'
-import High from '../assets/high.svg'
-import Extreme from '../assets/extreme.svg'
+import Low from '../assets/Low.svg'
+import Moderate from '../assets/Moderate.svg'
+import High from '../assets/High.svg'
+import Extreme from '../assets/Extreme.svg'
 
 const dustIcons ={
     Low: Low,
