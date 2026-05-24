@@ -42,8 +42,8 @@ const Dashboard = () => {
             </div>
         </div>
         {!selectedCity?(<div className='flex justify-center text-center items-center mt-40 text-slate-800 font-extrabold text-4xl'>Please select your city <br></br> And Check Your city weather</div>):
-        (<div className='content flex gap-9 flex-col text-white shadow-2xl font-bold text-2xl h-max m-4 rounded-2xl p-4 justify-center' style={{backgroundColor:`${jsonData.find(item=> item.name === selectedCity)?.theme}`,height:"458.4px"}}>
-            <div className='box flex gap-9 flex-col justify-between relative'>
+        (<div className='content flex gap-9 flex-col text-white shadow-2xl font-bold text-2xl h-max m-4 rounded-2xl p-4 justify-center transition-all duration-700 ease-in-out' style={{backgroundColor:`${jsonData.find(item=> item.name === selectedCity)?.theme}`,height:"458.4px"}}>
+            <div className='box flex gap-9 flex-col justify-between relative transition-all duration-500 hover:scale-105'>
                 <h1  className='text-emerald-950 font-extrabold'>Your City name :- <span className='text-red-950'>{selectedCity}</span></h1>
                 <h1  className='text-emerald-950 font-extrabold'>Region :- <span className='text-red-950'>{jsonData.find(item=> item.name === selectedCity)?.region}</span></h1>
                 <h1  className='text-emerald-950 font-extrabold'>Temperature :- <span className='text-red-950'>{jsonData.find(item=> item.name === selectedCity)?.temp}</span></h1>
